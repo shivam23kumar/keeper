@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const notes = () => {
+
+const Notes = (props) => {
   return (
-    <div>
-      <h1>Title</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusamus!</p>
+    <div className="note">
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
     </div>
   )
 }
 
-export default notes
+export default Notes;
