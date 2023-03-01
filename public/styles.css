@@ -66,7 +66,13 @@ footer p {
   cursor: pointer;
   outline: none;
 }
-
+button:disabled{
+        border: 1px solid #999999;
+        background-color: darkgrey;
+        color: #fff;
+       
+        cursor: not-allowed;
+}
 form {
   position: relative;
   width: 480px;

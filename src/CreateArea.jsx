@@ -42,7 +42,7 @@ function CreateArea(props) {
         value={note.content}
         onChange={handleChange}
         />
-        <button onClick={submitNote}>Add</button>
+        <button disabled={!note.title}onClick={submitNote}>Add</button>
       </form>
     </div>
   );
