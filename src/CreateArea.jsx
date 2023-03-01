@@ -5,6 +5,7 @@ function CreateArea(props) {
         title:"",
         content:""
     });
+    
 
     function handleChange(event){
         const{value, name} = event.target;
@@ -14,11 +15,17 @@ function CreateArea(props) {
                 [name]: value
             }
         })
+        
     }
     function submitNote(event){
         props.onAdd(note);
+        setNote({
+            title:"",
+            content:""
+        })
         event.preventDefault();
     }
+   
   return (
     <div>
       <form>
